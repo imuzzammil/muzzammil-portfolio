@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#07131b">
+<meta name="description" content="Portfolio of Muzzammil Khan, Web GIS Developer working with GIS mapping, remote sensing, spatial data, and geospatial applications.">
+<title>Muzzammil Khan | Web GIS Developer</title>
+<style>
+:root{--bg:#07131b;--surface:#0d2029;--surface2:#102832;--text:#edf8f5;--muted:#a4bbb9;--line:rgba(191,231,220,.14);--mint:#79e0bd;--blue:#77c8ee;--gold:#e9c783}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:85px}body{margin:0;background:radial-gradient(ellipse at 85% 0%,rgba(63,154,146,.16),transparent 36%),radial-gradient(ellipse at 0% 40%,rgba(40,107,142,.13),transparent 35%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 42px));margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(7,19,27,.86);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}nav{height:74px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{font-weight:850;letter-spacing:-.04em}.brand span{color:var(--mint)}.navlinks{display:flex;gap:25px;color:var(--muted);font-size:.9rem}.navlinks a:hover{color:var(--mint)}
+.hero{display:grid;grid-template-columns:1.35fr .8fr;align-items:center;gap:60px;padding:96px 0 82px;min-height:570px}.eyebrow{display:inline-flex;align-items:center;gap:9px;border:1px solid var(--line);border-radius:999px;padding:6px 12px;color:#c4eee0;font-size:.83rem;background:rgba(121,224,189,.06)}.pulse{width:7px;height:7px;border-radius:50%;background:var(--mint);box-shadow:0 0 12px var(--mint)}h1{font-size:clamp(2.8rem,6.2vw,5.25rem);line-height:1.02;letter-spacing:-.065em;margin:23px 0 18px}h1 em{font-style:normal;color:var(--mint)}.subtitle{font-size:clamp(1.05rem,2vw,1.28rem);font-weight:650;color:#d0e7e2;margin:0 0 15px}.lead{max-width:650px;color:var(--muted);font-size:1.02rem}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:27px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:11px 17px;border-radius:11px;border:1px solid var(--line);font-weight:750;font-size:.92rem;transition:.2s}.btn:hover{transform:translateY(-2px)}.primary{background:var(--mint);color:#062018;border-color:var(--mint)}.secondary{background:rgba(255,255,255,.025)}
+.map-card{position:relative;overflow:hidden;min-height:360px;border:1px solid var(--line);border-radius:26px;padding:24px;background:linear-gradient(145deg,rgba(121,224,189,.10),rgba(119,200,238,.04) 50%,rgba(255,255,255,.02));box-shadow:0 24px 70px rgba(0,0,0,.22)}.map-card:before{content:"";position:absolute;inset:0;opacity:.36;background-image:linear-gradient(rgba(121,224,189,.13) 1px,transparent 1px),linear-gradient(90deg,rgba(121,224,189,.13) 1px,transparent 1px);background-size:28px 28px;mask-image:linear-gradient(to bottom,black,transparent)}.map-art{position:relative;height:195px;margin:5px 0 14px}.map-art svg{width:100%;height:100%}.map-caption{position:relative;display:flex;align-items:center;justify-content:space-between;gap:10px}.map-caption strong{display:block;font-size:1.1rem}.map-caption span{font-size:.8rem;color:var(--muted)}.map-label{display:inline-flex;padding:6px 9px;border:1px solid var(--line);border-radius:8px;color:var(--mint)!important}
+section{padding:76px 0;scroll-margin-top:72px}.section-head{margin-bottom:28px}.kicker{color:var(--mint);font-weight:850;text-transform:uppercase;letter-spacing:.16em;font-size:.73rem}.section-head h2{font-size:clamp(2rem,4vw,3rem);line-height:1.12;letter-spacing:-.05em;margin:8px 0 10px}.section-head p{color:var(--muted);max-width:720px;margin:0}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}.panel{border:1px solid var(--line);border-radius:18px;padding:24px;background:rgba(255,255,255,.025)}.panel h3{margin:0 0 9px;font-size:1.08rem}.panel p{margin:0;color:var(--muted)}.facts{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}.fact{border:1px solid var(--line);border-radius:12px;padding:13px}.fact b{display:block;color:var(--mint);font-size:.9rem}.fact span{font-size:.83rem;color:var(--muted)}
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.skill{border:1px solid var(--line);border-radius:16px;padding:19px;background:linear-gradient(145deg,rgba(255,255,255,.035),rgba(255,255,255,.012))}.skill .icon{font-size:1.45rem;color:var(--mint)}.skill h3{font-size:1rem;margin:8px 0}.skill p{color:var(--muted);font-size:.88rem;margin:0}.chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}.chip{font-size:.75rem;padding:4px 8px;border-radius:7px;background:rgba(121,224,189,.07);border:1px solid rgba(121,224,189,.13);color:#c4eee0}
+.timeline{display:grid;gap:15px}.job{display:grid;grid-template-columns:190px 1fr;gap:24px}.job-date{color:var(--mint);font-size:.86rem;font-weight:750}.job h3{margin:0 0 3px}.job .company{color:var(--blue);font-weight:650;font-size:.91rem;margin-bottom:10px}.job ul{margin:0;padding-left:19px;color:var(--muted)}.job li{margin:4px 0}
+.edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.edu h3{margin-bottom:5px}.edu .institution{color:var(--blue);font-size:.9rem;font-weight:650}.edu .date{font-size:.82rem;color:var(--muted);margin-top:8px}.highlight{border-left:3px solid var(--mint);padding:12px 15px;margin-top:14px;background:rgba(121,224,189,.05);border-radius:0 10px 10px 0;color:#c5d9d5;font-size:.9rem}
+.awards{display:grid;grid-template-columns:1fr 1fr;gap:14px}.award{display:flex;gap:13px;align-items:flex-start}.award-icon{width:38px;height:38px;flex:0 0 38px;border-radius:11px;display:grid;place-items:center;background:rgba(233,199,131,.10);color:var(--gold);font-size:1.1rem}.award h3{font-size:.98rem;margin:0 0 4px}.award p{font-size:.86rem;color:var(--muted);margin:0}
+.languages{display:flex;flex-wrap:wrap;gap:10px}.language{padding:9px 13px;border:1px solid var(--line);border-radius:10px;color:#d7e8e3;background:rgba(255,255,255,.025);font-size:.9rem}
+.contact{display:flex;align-items:center;justify-content:space-between;gap:25px;padding:32px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(115deg,rgba(121,224,189,.10),rgba(119,200,238,.05))}.contact h2{margin:7px 0;font-size:clamp(1.8rem,3.5vw,2.7rem);letter-spacing:-.05em;line-height:1.15}.contact p{margin:0;color:var(--muted)}.contact-links{display:flex;flex-direction:column;gap:10px;min-width:235px}.contact-links a{color:#d5eee7;overflow-wrap:anywhere}.contact-links a:hover{color:var(--mint)}
+footer{border-top:1px solid var(--line);padding:26px 0 34px;color:var(--muted);font-size:.85rem}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+@media(max-width:800px){.hero{grid-template-columns:1fr;gap:32px;padding:68px 0 55px}.map-card{max-width:540px;min-height:310px}.map-art{height:160px}.skills{grid-template-columns:1fr 1fr}.job{grid-template-columns:1fr;gap:4px}.contact{align-items:flex-start;flex-direction:column}.contact-links{min-width:0}.grid2{grid-template-columns:1fr}}
+@media(max-width:560px){.wrap{width:calc(100% - 30px)}nav{height:65px}.navlinks{gap:13px;font-size:.78rem}.navlinks a:nth-child(2){display:none}.hero{padding-top:54px}.skills,.edu-grid,.awards{grid-template-columns:1fr}.facts{grid-template-columns:1fr 1fr}section{padding:56px 0}.panel{padding:20px}.contact{padding:24px}.map-card{padding:19px}}
+</style>
+</head>
+<body>
+<header><nav class="wrap"><a class="brand" href="#home">MUZZAMMIL<span> KHAN</span></a><div class="navlinks"><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#contact">Contact</a></div></nav></header>
+<main>
+<div class="wrap hero" id="home">
+  <div>
+    <div class="eyebrow"><span class="pulse"></span> Web GIS Developer · Lahore, Pakistan</div>
+    <h1>Mapping the world<br><em>Making data matter</em></h1>
+    <p class="subtitle">Web GIS Developer · GIS Expert ·  Remote Sensing</p>
+    <p class="lead">I work with maps and location-based data to help make complex information easier to understand. My experience includes GIS data management, spatial analysis, remote sensing, map production, and GIS dashboards, along with web-mapping tools and project quality checks.</p>
+    <div class="actions"><a class="btn primary" href="#experience">Explore my experience ↘</a><a class="btn secondary" href="#contact">Get in touch ↗</a></div>
+  </div>
+  <aside class="map-card">
+    <div class="map-art">
+      <svg viewBox="0 0 360 210" fill="none" aria-label="Decorative geospatial map illustration">
+        <g stroke="#79e0bd" stroke-opacity=".35" stroke-width="1.2"><path d="M12 40L66 23 98 49 143 30 174 55 218 38 258 62 304 37 350 53"/><path d="M5 82L51 67 90 91 126 75 165 100 207 77 249 98 292 78 355 93"/><path d="M8 126L48 109 90 132 128 116 171 141 216 117 256 139 302 118 351 136"/><path d="M20 171L66 151 101 174 146 157 183 181 229 158 273 180 320 160 352 174"/></g>
+        <path d="M26 145L57 112 92 119 112 82 151 69 174 91 207 84 223 119 260 128 287 161 253 183 207 171 177 191 132 172 95 183 63 162Z" fill="#79e0bd" fill-opacity=".10" stroke="#79e0bd" stroke-width="1.8"/>
+        <path d="M48 151L83 129 112 142 141 104 175 111 202 97 230 126 259 143 242 164 204 153 177 173 143 151 108 165 78 154Z" stroke="#77c8ee" stroke-width="1.5" stroke-dasharray="5 5"/>
+        <path d="M65 151C105 126 124 144 156 112S213 99 243 138 281 151 306 114" stroke="#79e0bd" stroke-width="2.5" stroke-linecap="round"/>
+        <circle cx="156" cy="112" r="7" fill="#79e0bd"/><circle cx="156" cy="112" r="15" stroke="#79e0bd" stroke-opacity=".55"/><circle cx="243" cy="138" r="5" fill="#77c8ee"/><circle cx="65" cy="151" r="4" fill="#e9c783"/>
+      </svg>
+    </div>
+    <div class="map-caption"><div><strong>Geospatial thinking</strong><span>From satellite imagery to interactive maps</span></div><span class="map-label">GIS · RS · Web</span></div>
+  </aside>
+</div>
+
+<section id="about"><div class="wrap">
+  <div class="section-head"><span class="kicker">About me</span><h2>Spatial Data, Real World Context</h2><p>With a background in Space Science, I work across GIS mapping, satellite imagery, spatial data management, and web-based geospatial tools. I enjoy solving data problems carefully and turning location data into maps, dashboards, and useful project outputs.</p></div>
+  <div class="grid2">
+    <article class="panel"><h3>Professional profile</h3><p>I am a GIS professional with hands-on experience in utility mapping, spatial data management, geodatabase work, land-use surveys, and cadastral mapping. I also work with satellite imagery and GIS tools to analyze spatial information, prepare maps, and support project teams. I focus on keeping data accurate, solving technical issues, and delivering reliable work.</p></article>
+    <article class="panel"><h3>What I work on</h3><p>My work covers GIS-based utility projects, spatial analysis, data validation, map production, GIS dashboards, remote sensing, land-use classification, and cadastral records. I also have skills in JavaScript-based web mapping and geospatial services.</p><div class="facts"><div class="fact"><b>GIS & Mapping</b><span>Utility maps and spatial records</span></div><div class="fact"><b>Remote Sensing</b><span>Satellite image analysis</span></div><div class="fact"><b>GIS Dashboards</b><span>Visualization and reporting</span></div><div class="fact"><b>Data Quality</b><span>Validation and QA checks</span></div></div></article>
+  </div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <div class="section-head"><span class="kicker">Technical toolkit</span><h2>Skills & Technologies</h2><p>Tools and practical skills I use for GIS, remote sensing, spatial data, and web mapping.</p></div>
+  <div class="skills">
+    <article class="skill"><div class="icon">⌖</div><h3>GIS & Cartography</h3><p>Mapping, digitization, cartographic design, 3D analysis, and geodatabase workflows.</p><div class="chips"><span class="chip">ArcGIS Pro</span><span class="chip">ArcMap</span><span class="chip">QGIS</span><span class="chip">Global Mapper</span></div></article>
+    <article class="skill"><div class="icon">◉</div><h3>Remote Sensing</h3><p>Satellite image processing, classification, environmental indices, and raster analysis.</p><div class="chips"><span class="chip">ERDAS Imagine</span><span class="chip">ENVI</span><span class="chip">SNAP</span><span class="chip">GEE</span></div></article>
+    <article class="skill"><div class="icon">⌘</div><h3>Web Development & Web GIS</h3><p>JavaScript-based web mapping and working with geospatial services.</p><div class="chips"><span class="chip">JavaScript</span><span class="chip">Leaflet.js</span><span class="chip">OpenLayers</span><span class="chip">GeoServer</span><span class="chip">Web Development</span></div></article>
+    <article class="skill"><div class="icon">⌁</div><h3>Python & Data</h3><p>Python-based analysis and plotting for geospatial and scientific workflows.</p><div class="chips"><span class="chip">NumPy</span><span class="chip">Matplotlib</span><span class="chip">GeoPandas</span></div></article>
+    <article class="skill"><div class="icon">△</div><h3>Terrain & Environment</h3><p>Terrain interpretation and land/environmental data analysis.</p><div class="chips"><span class="chip">DEM</span><span class="chip">Slope / Aspect</span><span class="chip">NDVI</span><span class="chip">LULC</span></div></article>
+    <article class="skill"><div class="icon">◎</div><h3>Field & Survey</h3><p>Field data capture, asset verification, and spatial record accuracy.</p><div class="chips"><span class="chip">GPS Collection</span><span class="chip">Field Mapping</span><span class="chip">Data Recording</span></div></article>
+  </div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+  <div class="section-head"><span class="kicker">Career journey</span><h2>Professional Experience</h2><p>My experience includes GIS utility projects, data management, quality assurance, land-use surveys, and cadastral mapping.</p></div>
+  <div class="timeline">
+    <article class="panel job"><div class="job-date">6 April — Present</div><div><h3>GIS Expert</h3><div class="company">TURKPAK · Under the supervision of NESPAK</div><ul><li>Work on GIS-based utility mapping and spatial data management projects.</li><li>Manage and maintain GIS data for LESCO, FESCO, and IESCO projects.</li><li>Investigate GIS technical issues and help maintain accurate, reliable data.</li><li>Develop and maintain GIS dashboards for visualization, reporting, and decision-making.</li><li>Support GIS applications, workflows, spatial analysis, data validation, map production, and database management.</li><li>Coordinate with clients and project teams, prepare technical documents and progress reports, and complete assigned work to project standards.</li></ul></div></article>
+    <article class="panel job"><div class="job-date">Jul 2025 — Oct 2025</div><div><h3>GIS Project Quality Assurance</h3><div class="company">City Survey Powerline Construction Pvt. Ltd.</div><ul><li>Handled quality control and assurance for the PULSE Drone Project.</li><li>Managed large geodatabase projects and helped maintain high-quality GIS deliverables.</li><li>Tested software, identified defects before release, and tracked quality benchmarks.</li><li>Supported junior QA analysts and reviewed quality and performance data for operational decisions.</li></ul></div></article>
+    <article class="panel job"><div class="job-date">May 2024 — Jul 2024</div><div><h3>Land Use Classification Survey</h3><div class="company">Union Association Pvt. Ltd.</div><ul><li>Contributed to land-use classification survey activities.</li><li>Marked permanent features along List A roads and documented key road assets.</li><li>Verified road property data to support accurate records.</li></ul></div></article>
+    <article class="panel job"><div class="job-date">2024</div><div><h3>GIS / Cadastral Mapping</h3><div class="company">National Engineering Services Pakistan (NESPAK)</div><ul><li>Used ArcGIS and QGIS for cadastral mapping.</li><li>Digitized land parcels and updated land ownership records.</li><li>Conducted spatial analysis for land-use planning and legal documentation.</li><li>Collaborated with survey teams and municipal authorities on mapping accuracy.</li></ul></div></article>
+  </div>
+</div></section>
+
+<section id="education"><div class="wrap">
+  <div class="section-head"><span class="kicker">Academic background</span><h2>Education & Research</h2></div>
+  <div class="edu-grid">
+    <article class="panel edu"><h3>Bachelor’s in Space Science</h3><div class="institution">University of the Punjab, Lahore</div><div class="date">Dec 2021 — Jul 2025</div><div class="highlight">Thesis: “Investigating the Morphological Indicators Evidence of Ice & Minerals.”</div></article>
+    <article class="panel edu"><h3>Intermediate in Computer Science</h3><div class="institution">Government Gulberg College, Lahore</div><div class="date">Jan 2016 — Sep 2017</div><h3 style="margin-top:20px">Matric in Science</h3><div class="institution">Government School, Lahore</div><div class="date">Jan 2014 — Jul 2015</div></article>
+  </div>
+</div></section>
+
+<section id="research"><div class="wrap">
+  <div class="section-head"><span class="kicker">Research & recognition</span><h2>Research, Conferences & Awards</h2></div>
+  <div class="awards">
+    <article class="panel award"><div class="award-icon">✦</div><div><h3>Published Research Paper</h3><p>ICSAT International Conference — “Investigating Morphological Feature of Martian Crater near Eridania Basin Using Remote Sensing Techniques.”</p></div></article>
+    <article class="panel award"><div class="award-icon">◇</div><div><h3>Poster Competition Winner</h3><p>World GIS Day, University of Management and Technology (UMT), Lahore.</p></div></article>
+    <article class="panel award"><div class="award-icon">⌁</div><div><h3>Research Presentation</h3><p>Presented research on image enhancement and pan-sharpening techniques at the International Conference on Science, Technology and Innovation, Kinnaird College for Women, Lahore.</p></div></article>
+    <article class="panel award"><div class="award-icon">◎</div><div><h3>Conference Participation</h3><p>3rd International Conference, South Asia Rainwater Network (SARNET), Pakistan; NASA Space Apps Challenge.</p></div></article>
+  </div>
+</div></section>
+
+<section id="languages"><div class="wrap"><div class="section-head"><span class="kicker">Communication</span><h2>Languages</h2></div><div class="languages"><span class="language">English</span><span class="language">Chinese · HSK-1</span><span class="language">Urdu</span><span class="language">Punjabi</span><span class="language">Pashto</span></div></div></section>
+
+<section id="contact"><div class="wrap"><div class="contact"><div><span class="kicker">Let's connect</span><h2>Have a GIS project or opportunity?</h2><p>Reach out to discuss geospatial work, web mapping, research, or collaboration.</p><div class="actions"><a class="btn primary" href="mailto:muzamilkhan50563@gmail.com">Email me ↗</a></div></div><div class="contact-links"><a href="mailto:muzamilkhan50563@gmail.com">✉ &nbsp; muzamilkhan50563@gmail.com</a><a href="tel:+923114642476">☎ &nbsp; +92 311 4642476</a><span>⌖ &nbsp; Lahore, Pakistan</span><a href="linkedin.com/in/muzzammil-khan-722819357/" target="_blank" rel="noreferrer">↗ &nbsp; LinkedIn Profile</a><a href="https://github.com/muzamil50" target="_blank" rel="noreferrer">↗ &nbsp; GitHub profile</a></div></div></div></section>
+</main>
+<footer><div class="wrap foot"><span>© <span id="year"></span> Muzzammil Khan · Web GIS Developer</span><span>GIS mapping, spatial data, and remote sensing.</span></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
